@@ -2,17 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo tranquilpeak theme</title>
-    <link>https://louis14.github.io/</link>
+    <link>https://steinsgo.github.io/</link>
     <description>Recent content on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 08 Apr 2024 23:48:22 +0800</lastBuildDate><atom:link href="https://louis14.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 09 Apr 2024 00:31:05 +0800</lastBuildDate><atom:link href="https://steinsgo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>在上传不成功我就睡觉了</title>
+      <link>https://steinsgo.github.io/post/%E5%9C%A8%E4%B8%8A%E4%BC%A0%E4%B8%8D%E6%88%90%E5%8A%9F%E6%88%91%E5%B0%B1%E7%9D%A1%E8%A7%89%E4%BA%86/</link>
+      <pubDate>Tue, 09 Apr 2024 00:31:05 +0800</pubDate>
+      
+      <guid>https://steinsgo.github.io/post/%E5%9C%A8%E4%B8%8A%E4%BC%A0%E4%B8%8D%E6%88%90%E5%8A%9F%E6%88%91%E5%B0%B1%E7%9D%A1%E8%A7%89%E4%BA%86/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>我爱死你了</title>
-      <link>https://louis14.github.io/post/%E6%88%91%E7%88%B1%E6%AD%BB%E4%BD%A0%E4%BA%86/</link>
+      <link>https://steinsgo.github.io/post/%E6%88%91%E7%88%B1%E6%AD%BB%E4%BD%A0%E4%BA%86/</link>
       <pubDate>Mon, 08 Apr 2024 23:48:22 +0800</pubDate>
       
-      <guid>https://louis14.github.io/post/%E6%88%91%E7%88%B1%E6%AD%BB%E4%BD%A0%E4%BA%86/</guid>
+      <guid>https://steinsgo.github.io/post/%E6%88%91%E7%88%B1%E6%AD%BB%E4%BD%A0%E4%BA%86/</guid>
       <description></description>
     </item>
     
