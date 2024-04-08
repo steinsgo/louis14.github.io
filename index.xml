@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo tranquilpeak theme</title>
-    <link>https://steinsgo.github.io/</link>
+    <link>https://louis14.github.io/</link>
     <description>Recent content on Hugo tranquilpeak theme</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://steinsgo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://louis14.github.io/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
