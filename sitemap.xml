@@ -2,6 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+<<<<<<< HEAD
     <loc>https://louis14.github.io/archives/</loc>
   </url><url>
     <loc>https://louis14.github.io/categories/</loc>
@@ -9,5 +10,14 @@
     <loc>https://louis14.github.io/</loc>
   </url><url>
     <loc>https://louis14.github.io/tags/</loc>
+=======
+    <loc>https://steinsgo.github.io/archives/</loc>
+  </url><url>
+    <loc>https://steinsgo.github.io/categories/</loc>
+  </url><url>
+    <loc>https://steinsgo.github.io/</loc>
+  </url><url>
+    <loc>https://steinsgo.github.io/tags/</loc>
+>>>>>>> origin/master
   </url>
 </urlset>
