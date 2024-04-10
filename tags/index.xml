@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hugo tranquilpeak theme</title>
+    <title>Tags on steinsgo&#39;s blog</title>
     <link>https://steinsgo.github.io/tags/</link>
-    <description>Recent content in Tags on Hugo tranquilpeak theme</description>
+    <description>Recent content in Tags on steinsgo&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 09 Apr 2024 09:07:25 +0800</lastBuildDate><atom:link href="https://steinsgo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 11 Apr 2024 03:00:18 +0800</lastBuildDate><atom:link href="https://steinsgo.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>tag1</title>
       <link>https://steinsgo.github.io/tags/tag1/</link>
-      <pubDate>Tue, 09 Apr 2024 09:07:25 +0800</pubDate>
+      <pubDate>Thu, 11 Apr 2024 03:00:18 +0800</pubDate>
       
       <guid>https://steinsgo.github.io/tags/tag1/</guid>
       <description></description>
@@ -19,7 +19,7 @@
     <item>
       <title>tag2</title>
       <link>https://steinsgo.github.io/tags/tag2/</link>
-      <pubDate>Tue, 09 Apr 2024 09:07:25 +0800</pubDate>
+      <pubDate>Thu, 11 Apr 2024 03:00:18 +0800</pubDate>
       
       <guid>https://steinsgo.github.io/tags/tag2/</guid>
       <description></description>
