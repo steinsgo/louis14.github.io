@@ -8,20 +8,47 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Apr 2024 17:27:45 +0800</lastBuildDate><atom:link href="https://steinsgo.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>category</title>
-      <link>https://steinsgo.github.io/categories/category/</link>
+      <title>树洞</title>
+      <link>https://steinsgo.github.io/categories/%E6%A0%91%E6%B4%9E/</link>
       <pubDate>Fri, 12 Apr 2024 17:27:45 +0800</pubDate>
       
-      <guid>https://steinsgo.github.io/categories/category/</guid>
+      <guid>https://steinsgo.github.io/categories/%E6%A0%91%E6%B4%9E/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>subcategory</title>
-      <link>https://steinsgo.github.io/categories/subcategory/</link>
-      <pubDate>Fri, 12 Apr 2024 17:27:45 +0800</pubDate>
+      <title>求助帖</title>
+      <link>https://steinsgo.github.io/categories/%E6%B1%82%E5%8A%A9%E5%B8%96/</link>
+      <pubDate>Thu, 11 Apr 2024 13:16:47 +0800</pubDate>
       
-      <guid>https://steinsgo.github.io/categories/subcategory/</guid>
+      <guid>https://steinsgo.github.io/categories/%E6%B1%82%E5%8A%A9%E5%B8%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>从0开始的GPT</title>
+      <link>https://steinsgo.github.io/categories/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84gpt/</link>
+      <pubDate>Thu, 11 Apr 2024 03:49:52 +0800</pubDate>
+      
+      <guid>https://steinsgo.github.io/categories/%E4%BB%8E0%E5%BC%80%E5%A7%8B%E7%9A%84gpt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>同学专栏</title>
+      <link>https://steinsgo.github.io/categories/%E5%90%8C%E5%AD%A6%E4%B8%93%E6%A0%8F/</link>
+      <pubDate>Tue, 09 Apr 2024 09:07:25 +0800</pubDate>
+      
+      <guid>https://steinsgo.github.io/categories/%E5%90%8C%E5%AD%A6%E4%B8%93%E6%A0%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ACG</title>
+      <link>https://steinsgo.github.io/categories/acg/</link>
+      <pubDate>Mon, 08 Apr 2024 23:48:22 +0800</pubDate>
+      
+      <guid>https://steinsgo.github.io/categories/acg/</guid>
       <description></description>
     </item>
     
