@@ -2,17 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://steinsgo.github.io/post/02chisel%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</loc>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
+  </url><url>
     <loc>https://steinsgo.github.io/categories/</loc>
-    <lastmod>2024-04-23T01:58:59+08:00</lastmod>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
+  </url><url>
+    <loc>https://steinsgo.github.io/categories/category/</loc>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
   </url><url>
     <loc>https://steinsgo.github.io/post/</loc>
-    <lastmod>2024-04-23T01:58:59+08:00</lastmod>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
   </url><url>
     <loc>https://steinsgo.github.io/</loc>
-    <lastmod>2024-04-23T01:58:59+08:00</lastmod>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
+  </url><url>
+    <loc>https://steinsgo.github.io/categories/subcategory/</loc>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
+  </url><url>
+    <loc>https://steinsgo.github.io/tags/tag1/</loc>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
+  </url><url>
+    <loc>https://steinsgo.github.io/tags/tag2/</loc>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
   </url><url>
     <loc>https://steinsgo.github.io/tags/</loc>
-    <lastmod>2024-04-23T01:58:59+08:00</lastmod>
+    <lastmod>2024-05-03T04:50:46+08:00</lastmod>
+  </url><url>
+    <loc>https://steinsgo.github.io/post/bad_decision_14/</loc>
+    <lastmod>2024-04-30T10:05:32+08:00</lastmod>
   </url><url>
     <loc>https://steinsgo.github.io/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2024-04-23T01:58:59+08:00</lastmod>
