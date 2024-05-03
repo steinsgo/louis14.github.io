@@ -52,16 +52,12 @@
   
   
     
-      <meta property="article:section" content="category">
-    
-      <meta property="article:section" content="subcategory">
+      <meta property="article:section" content="Chisel">
     
   
   
     
-      <meta property="article:tag" content="tag1">
-    
-      <meta property="article:tag" content="tag2">
+      <meta property="article:tag" content="环境配置">
     
   
 
@@ -287,9 +283,7 @@ if (!doNotTrack) {
   
     <span>发布在</span>
     
-      <a class="category-link" href="https://steinsgo.github.io/categories/category">category</a>, 
-    
-      <a class="category-link" href="https://steinsgo.github.io/categories/subcategory">subcategory</a>
+      <a class="category-link" href="https://steinsgo.github.io/categories/chisel">Chisel</a>
     
   
 
@@ -299,8 +293,86 @@ if (!doNotTrack) {
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              <p>终于！</p>
+              <h1 id="本篇讲述的是chisel的环境配置">本篇讲述的是Chisel的环境配置</h1>
+<h6 id="写文字的时候本人正处于精神崩溃的边缘望海涵">写文字的时候本人正处于精神崩溃的边缘，望海涵。</h6>
+<p>先放一张凌晨实现的压压惊:-）</p>
 <p><img src="images/c.png" alt=""></p>
+<ul>
+<li>
+<h3 id="首先我们需要安装合适的操作系统">首先，我们需要安装合适的操作系统</h3>
+<p>我使用的是基于WSL的Ubuntu22.04，这里附上官方网站可供参考<a href="https://docs.microsoft.com/zh-cn/windows/wsl/install">安装 WSL | Microsoft Docs</a></p>
+<p>在windows子系统上安装，这里不推荐在微软商店下载，因为找不到目录（好吧是我废</p>
+<p>在执行终端完毕</p>
+<pre><code>wsl--install
+</code></pre><p>后重启计算机</p>
+<p>然后我们直接导航到<code>安装</code>-&gt;<code>旧版本的手动安装步骤</code> 手动下载Ubuntu 22.04 LTS</p>
+<p><img src="https://steinsgo.github.io/images/x1.png" alt=""></p>
+<p>下载完毕后，双击文件即可安装完毕。</p>
+<h4 id="启动接下来是注册会让你填写用户名和密码很重要">启动接下来是注册，会让你填写用户名和密码很重要！</h4>
+</li>
+<li>
+<h3 id="转移盘操作">转移盘操作</h3>
+<p>WSL的子系统默认会安装在C盘，随着使用，C盘会占用越来越多，导致WSL系统异常
+所以我们需要将WSL子系统迁移到其他磁盘，具体流程如下
+1.査看WSL状态: ws1 -1 -v 确保子系统处于 stopped 状态才能进行迁移</p>
+<p>2.导出子系统镜像:</p>
+<pre><code>wsl --export linux name D:\ubuntu.tar#linux name 为当前Ubuntu2204 ubuntu为自定义名称
+</code></pre><p>3.注销Linux子系统:</p>
+<pre><code>wsl --unregister ubuntu2204
+</code></pre><p>4.导入系统:</p>
+<pre><code>ws1 --import&lt;子系统名称〉&lt;要迁移的磁盘路径&gt;D:\ubuntu.tar --version 2
+</code></pre><p>5.修改默认用户:</p>
+<pre><code>ubuntu22.04.exe config --default-user name（name为用户名字
+</code></pre><p>到这里有可能会失败，我试过最后通过使用虚拟磁盘完成，这里不再赘述</p>
+<p>这样所有操作系统的东西都在d盘完成</p>
+</li>
+<li>
+<h3 id="chisel运行依赖环境配置">Chisel运行依赖环境配置</h3>
+<h4 id="安装java">安装Java</h4>
+<pre><code>sudo apt-get install default-jdk
+  
+</code></pre><h4 id="安装sbt">安装sbt</h4>
+<pre><code>echo &quot;deb https://repo.scala-sbt.org/scalasbt/debian all main&quot; | sudo tee /etc/apt/sources.list.d/sbt.list
+echo &quot;deb https://repo.scala-sbt.org/scalasbt/debian /&quot; | sudo tee /etc/apt/sources.list.d/sbt_old.list
+curl -sL &quot;https://keyserver.ubuntu.com/pks/lookup?op=get&amp;search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823&quot; | sudo apt-key add
+sudo apt-get update
+sudo apt-get install sbt
+  
+</code></pre><h4 id="安装verilator">安装Verilator</h4>
+<pre><code>sudo apt-get install git make autoconf g++ flex bison
+  
+</code></pre><p>将Verilator源码clone到本地：</p>
+<pre><code>git clone http://git.veripool.org/git/verilator
+</code></pre><p>切换版本：</p>
+<pre><code>cd verilator
+git pull
+git checkout v5.002
+</code></pre><p>编译Verilator并安装：</p>
+<pre><code>unset VERILATOR_ROOT 
+autoconf 
+./configure 
+make -j($nproc) #直接make也行
+sudo make install 
+</code></pre><h3 id="其中的unset-verilator_root很关键是一个报错点">其中的<code>unset VERILATOR_ROOT</code>很关键，是一个报错点！</h3>
+<p>这样我们就完成了对verilator的安装！</p>
+</li>
+<li>
+<h3 id="vs-code环境配置">VS Code环境配置</h3>
+<h4 id="安装插件scalametals-chisel-syntax-scala-syntax">安装插件Scala（Metals）、 Chisel Syntax 、Scala Syntax</h4>
+<p><a href="https://github.com/freechipsproject/chisel-template">chisel-template: A template project for beginning new Chisel work (github.com)</a>。</p>
+<p>我们选择在GitHub上部署 ，打开链接使用use this templete功能，新建仓库名Chisel完成搭建</p>
+<h4 id="测试运行部署到vscode">测试运行部署到Vscode</h4>
+<p>在Ubuntu2204中键入（以上全部文件均下载在根目录</p>
+<pre><code>cd Chisel
+code .
+</code></pre><p>右下角弹出<code>Sbt</code>点击，点击Import build，完成搭建</p>
+<p>接下来我们运行</p>
+<pre><code>sbt test
+</code></pre><p>得到</p>
+<p><img src="images/d.png" alt=""></p>
+<h1 id="成功恭喜你">成功！！！恭喜你！！</h1>
+</li>
+</ul>
               
 
 
@@ -314,9 +386,7 @@ if (!doNotTrack) {
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">标签</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="https://steinsgo.github.io/tags/tag1/">tag1</a>
-
-  <a class="tag tag--primary tag--small" href="https://steinsgo.github.io/tags/tag2/">tag2</a>
+  <a class="tag tag--primary tag--small" href="https://steinsgo.github.io/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">环境配置</a>
 
                   </div>
                 
